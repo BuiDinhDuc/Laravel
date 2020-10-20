@@ -59,3 +59,9 @@ Route::get('/404', function () {
 Route::get('/contact-us', function () {
     return view('FE.pages.contact-us');
 });
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', function () {
+        return view('BE.pages.index');
+    });
+});
