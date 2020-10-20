@@ -57,7 +57,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="{{asset('FE/images/home/logo.png')}}" alt="" /></a>
+							<a href="{{asset('')}}"><img src="{{asset('FE/images/home/logo.png')}}" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -122,14 +122,14 @@
 										<li><a href="{{asset('shop/login')}}">Login</a></li>
                                     </ul>
                                 </li>
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+								<li class="dropdown"><a href="{{asset('blog')}}">Blog<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
+                                        <li><a href="{{asset('blog/blog-list')}}">Blog List</a></li>
+										<li><a href="{{asset('blog/blog-single')}}">Blog Single</a></li>
                                     </ul>
                                 </li>
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+								<li><a href="{{asset('/404')}}">404</a></li>
+								<li><a href="{{asset('/contact-us')}}">Contact</a></li>
 							</ul>
 						</div>
 					</div>

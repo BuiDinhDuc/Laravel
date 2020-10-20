@@ -41,3 +41,21 @@ Route::group(['prefix' => 'shop'], function () {
         return view('FE.pages.login');
     });
 });
+
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', function () {
+        return view('FE.pages.blog');
+    });
+    Route::get('/blog-list', function () {
+        return view('FE.pages.blog');
+    });
+    Route::get('/blog-single', function () {
+        return view('FE.pages.blog-single');
+    });
+});
+Route::get('/404', function () {
+    return view('FE.pages.404');
+});
+Route::get('/contact-us', function () {
+    return view('FE.pages.contact-us');
+});
