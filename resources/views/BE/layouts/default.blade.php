@@ -30,7 +30,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{asset('admin')}}">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -42,7 +42,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{asset('admin')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -64,8 +64,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <a class="collapse-item" href="{{asset('admin/components/buttons')}}">Buttons</a>
+            <a class="collapse-item" href="{{asset('admin/components/cards')}}">Cards</a>
           </div>
         </div>
       </li>
@@ -183,11 +183,12 @@
 
   <!-- Page level plugins -->
   <script src="{{asset('BE/vendor/chart.js/Chart.min.js')}}"></script>
-
-  <!-- Page level custom scripts -->
   <script src="{{asset('BE/js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('BE/js/demo/chart-pie-demo.js')}}"></script>
   <script src="{{asset('BE/js/demo/chart-bar-demo.js')}}"></script>
+  <script src="{{asset('BE/vendor/datatables/jquery.dataTables.min.js')}}"></script>
+  <script src="{{asset('BE/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
+  <script src="{{asset('BE/js/demo/datatables-demo.js')}}"></script>
 
 </body>
 

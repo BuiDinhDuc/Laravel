@@ -64,4 +64,19 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
         return view('BE.pages.index');
     });
+
+    Route::group(['prefix' => 'components'], function () {
+        Route::get('/buttons', function () {
+            return view('BE.pages.buttons');
+             });
+
+
+         Route::get('/cards', function () {
+             return view('BE.pages.cards');
+              });
+
+    });
+
+
+
 });
